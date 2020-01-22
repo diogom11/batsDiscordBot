@@ -40,8 +40,11 @@ async def cs(ctx):
     await ctx.send(calculate_cs_time(CS_TIMES[0], 1))
 
 #!cs_assemble (cshournumber) starts the timer for a certain cs time that will be played
-#@client.command()
-#async def cs_assemble(ctx):
+@client.command()
+async def cs_assemble(ctx, cs_hournumber: int):
+    #iniciar timer tendo em conta CS_TIMES[cs_hournumber-1]
+    #de alguma forma quando o timer terminar o bot vai entrar na sala de onde foi chamado (FORÇAR A ESTAR NUMA SALA PARA ELE DEPOIS ENTRAR - REJEITAR SE NÃO ESTIVER NUMA SALA)
+    #fazer mention à equipa se a lista tiver membros adicionados quando é feito o assemble e depois quando chegar a hora 
 
 
 #!cs_add (user_y) adds a discord user to the cs session
